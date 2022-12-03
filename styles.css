@@ -1,0 +1,71 @@
+body {
+  box-sizing: border-box;
+}
+/*I would specify an inline CSS for that container and put a couple of margin-top:-10px
+
+margin-bottom:-10px;
+That would work; I will explore better alternatives and update you as well  */
+
+main,
+header,
+section,
+aside,
+footer {
+  margin: 0px;
+  padding: 20px;
+  border: 1px solid #000000;
+  color: #ffffff;
+}
+
+main {
+  background: #000000;
+}
+
+.heading {
+  font-family: "Courier New", Courier, monospace;
+  font-size: calc(19px + 1vw);
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: calc(13px + 0.5vw);
+}
+
+.header {
+  background: #03a9f4;
+}
+
+.hero {
+  background: #d22b1f;
+}
+
+.content {
+  background: #129a22;
+}
+
+.sidebar {
+  border: 1px solid #000000;
+  background: #673ab7;
+}
+
+.footer {
+  border: 1px solid #000000;
+  background: #616161;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 76rem;
+}
+
+@media screen and (min-width: 640px) {
+  .flex-container {
+    display: flex;
+  }
+  .content {
+    flex: 1;
+  }
+  .sidebar {
+    flex: 0 1 300px;
+  }
+}
